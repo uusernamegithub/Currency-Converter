@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="converter">
+        <div class="heading">
+            <h1>Currency Converter</h1>
+        </div>
+        <form>
+            <div class="box">
+                <input type="text" id="inpt" placeholder="1">
+                <input type="text" id="otpt" placeholder="1">
+            </div>
+            <div class="info">
+                <div class="from">
+                    <div class="img">
+                        <img class ="flag"  src="https://flagsapi.com/US/flat/64.png">  <!--flag links from COUNTRYFLAGS API-->
+                    </div>
+                    <div class="dropdown">
+                        <select name = "from" >
+                        
+                             <!--options added in js-->
+                        </select>
+                    </div>
+    
+                </div>
+
+                <div class="convert">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>  <!--for any symbol use font awesome-->
+                </div>                                                   <!-- 1) go to font awesome libraries 2) copy first Copy Link Tag and paste it in head 3)copy the desired icon link in body -->
+
+                <div class="to">
+                    <div class="img">
+                        <img  class ="flag" src="https://flagsapi.com/IN/flat/64.png">
+                    </div>
+                    <div class="dropdown">
+                        <select name = "to" >
+                           <!--options added in js-->
+                        </select>
+                    </div>
+    
+                </div>
+    
+            </div>
+            
+            <div class="dis">
+                <p>1 USD = 80 INR </p>
+            </div>
+            <div class="btn">
+                <button>Get Exchange Rate</button>
+            </div>
+        </form>
+    </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
